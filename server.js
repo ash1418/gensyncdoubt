@@ -38,7 +38,9 @@ app.use(session({ secret: "secret" }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect(url).then(() => console.log(`Connected to DB`.white.inverse));
+mongoose.connect(url).then(() => console.log(`Connected to DB`.white.inverse)).catch(error => {
+    console.error("MongoDB connection error:", error);
+});
 
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static("client/build"));
@@ -57,7 +59,7 @@ if (process.env.NODE_ENV === "production") {
 	app.use("/godmode", godmode);
 }
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT || 8000, () => {
 	console.log(process.env.PORT);
 	console.log(`Server running at port ${process.env.PORT}`.green.inverse);
 });
