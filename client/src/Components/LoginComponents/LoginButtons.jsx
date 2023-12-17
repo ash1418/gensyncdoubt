@@ -23,15 +23,15 @@ const LoginButtons = (props) => {
 			>
 				Register
 			</button>
-			<div className="orStyle">OR</div>
+			{/* <div className="orStyle">OR</div> */}
 
-			<a
+			{/* <a
 				href={api_endpoint + "/user/auth/google"}
 				className="button button-full"
 			>
 				<UilGoogle size={24} />
 				&nbsp; Sign In With google
-			</a>
+			</a> */}
 		</div>
 	);
 };

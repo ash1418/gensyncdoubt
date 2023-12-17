@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import Logo from "../../Assets/DoubtHub Logo.png";
-import LogoDark from "../../Assets/DoubtHub_Logo_White.png";
+import Logo from "../../Assets/codial-high-resolution-logo white.png";
+// import LogoDark from "../../Assets/DoubtHub_Logo_White.png";
+import LogoDark from "../../Assets/codial-high-resolution-logo.png"
 import { Link, useNavigate } from "react-router-dom";
 import classes from "../../Styles/component-styles/sidebar.module.css";
 import { userObjectContext } from "../../Context";

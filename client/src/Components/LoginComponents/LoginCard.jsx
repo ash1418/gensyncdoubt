@@ -122,13 +122,13 @@ const LoginCard = (props) => {
 							</button>
 							<div className="orStyle">OR</div>
 						<div className="registerOptions">
-							<a
+							{/* <a
 								href={api_endpoint + "/user/auth/google"}
 								className="button button-full button2"
 							>
 								<UilGoogle size={24} />
 								&nbsp; Sign In With google
-							</a>
+							</a> */}
 
 							<button
 								type="button"
